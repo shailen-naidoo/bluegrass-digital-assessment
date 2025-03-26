@@ -171,7 +171,7 @@ const drawer = ref(true)
 
 <style scoped>
 * {
-  color: #414141
+  color: #414141;
 }
 
 .main {
