@@ -28,7 +28,7 @@
           <v-avatar class="avatar_user_profile">
             AS
           </v-avatar>
-          <h3 class="avatar_user_name mx-2">
+          <h3 class="avatar_user_name mx-3">
             Adrian Stefan
           </h3>
           <v-icon
