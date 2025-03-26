@@ -118,9 +118,9 @@
             md="4"
           >
             <v-card
-              class="mx-auto pa-2 elevation-6"
+              class="mx-auto pa-2"
               max-width="344"
-              style="border-radius: 16px;"
+              style="border-radius: 16px; box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12);"
             >
               <v-container>
                 <v-row>
