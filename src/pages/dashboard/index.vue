@@ -10,7 +10,7 @@
   <v-container>
     <v-row>
       <v-col
-        v-for="(item, index) in [1,2,3,4,5,6]"
+        v-for="(item, index) in dashboardItems"
         :key="index"
         cols="12"
         md="4"
@@ -24,16 +24,16 @@
             <v-row>
               <v-col>
                 <h3>
-                  Total Practises
+                  {{ item.name }}
                 </h3>
                 <v-icon
                   color="success"
                   icon="mdi-arrow-top-right"
                   left
                 />
-                <span class="text-h6 font-weight-bold ml-2">+15%</span>
+                <span class="text-h6 font-weight-bold ml-2">+{{ item.percentage_increase }}%</span>
                 <h1 class="text-h3 font-weight-bold">
-                  11
+                  {{ item.value }}
                 </h1>
               </v-col>
               <v-col
@@ -59,3 +59,14 @@
     </v-row>
   </v-container>
 </template>
+
+<script lang="ts" setup>
+import type { DashboardModel } from '@/models/DashboardModel';
+import { DashboardService } from '@/services/DashboardService';
+
+const dashboardItems = ref<DashboardModel[]>([])
+
+onMounted(async () => {
+  dashboardItems.value = await DashboardService.getDashboardItems()
+})
+</script>
