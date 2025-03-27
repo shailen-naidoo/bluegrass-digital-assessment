@@ -22,10 +22,10 @@
         >
           <v-container>
             <v-row>
-              <v-col>
-                <h3>
+              <v-col cols="8">
+                <h4>
                   {{ item.name }}
-                </h3>
+                </h4>
                 <v-icon
                   color="success"
                   icon="mdi-arrow-top-right"
@@ -37,6 +37,7 @@
                 </h1>
               </v-col>
               <v-col
+                cols="4"
                 align-self="center"
                 align="end"
               >

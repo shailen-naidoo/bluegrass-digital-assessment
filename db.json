@@ -9,29 +9,29 @@
       "value": 15
     },
     {
-      "name": "Total Practises",
+      "name": "Total Subscribers",
       "percentage_increase": 15,
-      "value": 15
+      "value": 261
     },
     {
-      "name": "Total Practises",
+      "name": "Total Treatments",
       "percentage_increase": 15,
-      "value": 15
+      "value": 135
     },
     {
-      "name": "Total Practises",
+      "name": "Total Consents",
       "percentage_increase": 15,
-      "value": 15
+      "value": 135
     },
     {
-      "name": "Total Practises",
+      "name": "Total Consents signed",
       "percentage_increase": 15,
-      "value": 15
+      "value": 2159
     },
     {
-      "name": "Total Practises",
+      "name": "Total Fact sheets read",
       "percentage_increase": 15,
-      "value": 15
+      "value": 2159
     }
   ]
 }
