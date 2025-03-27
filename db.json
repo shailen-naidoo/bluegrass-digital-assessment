@@ -1,0 +1,12 @@
+{
+  "user": {
+    "fullname": "Adrian Stefan"
+  },
+  "dashboard": [
+    {
+      "name": "Total Practises",
+      "percentage_increase": 15,
+      "value": 15
+    }
+  ]
+}

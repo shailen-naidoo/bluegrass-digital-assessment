@@ -21,7 +21,7 @@
           AS
         </v-avatar>
         <h3 class="avatar_user_name mx-3">
-          Adrian Stefan
+          {{ user.fullname }}
         </h3>
         <v-icon
           icon="mdi-chevron-down"
@@ -32,6 +32,17 @@
     </v-container>
   </v-app-bar>
 </template>
+
+<script lang="ts" setup>
+import { UserModel } from '@/models/UserModel';
+import { UserService } from '@/services/UserService';
+
+const user = ref(UserModel.create())
+
+onMounted(async () => {
+  user.value = await UserService.getUser()
+}) 
+</script>
 
 <style scoped>
 .avatar_user_profile {
