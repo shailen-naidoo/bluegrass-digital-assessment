@@ -49,7 +49,7 @@
                     size="28"
                     color="lightblue"
                   >
-                    mdi-stethoscope
+                    {{ item.icon }}
                   </v-icon>
                 </v-avatar>
               </v-col>

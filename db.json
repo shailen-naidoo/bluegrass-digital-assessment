@@ -6,31 +6,37 @@
     {
       "name": "Total Practises",
       "percentage_increase": 15,
+      "icon": "mdi-stethoscope",
       "value": 15
     },
     {
       "name": "Total Subscribers",
       "percentage_increase": 15,
+      "icon": "mdi-cradle",
       "value": 261
     },
     {
       "name": "Total Treatments",
       "percentage_increase": 15,
+      "icon": "mdi-bandage",
       "value": 135
     },
     {
       "name": "Total Consents",
       "percentage_increase": 15,
+      "icon": "mdi-file-sign",
       "value": 135
     },
     {
       "name": "Total Consents signed",
       "percentage_increase": 15,
+      "icon": "mdi-file-sign",
       "value": 2159
     },
     {
       "name": "Total Fact sheets read",
       "percentage_increase": 15,
+      "icon": "mdi-lightbulb",
       "value": 2159
     }
   ]
