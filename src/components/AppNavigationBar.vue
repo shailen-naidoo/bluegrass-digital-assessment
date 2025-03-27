@@ -25,7 +25,7 @@
         </h3>
         <v-icon
           icon="mdi-chevron-down"
-          class="avatar_icon mr-10"
+          class="avatar_icon mr-4"
           size="small"
         />
       </v-row>

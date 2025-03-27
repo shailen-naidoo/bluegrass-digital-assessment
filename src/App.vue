@@ -14,10 +14,6 @@ import AppNavigationDrawer from './components/AppNavigationDrawer.vue';
 </script>
 
 <style scoped>
-* {
-  color: #414141;
-}
-
 .main {
   background-color: #FAFAFA;
 }

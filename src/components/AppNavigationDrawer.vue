@@ -21,7 +21,7 @@
       <template #prepend>
         <v-icon color="#67ADB9" />
       </template>
-      <span style="color: #578388">Dashboard</span>
+      <span>Dashboard</span>
     </v-btn>
     <v-btn
       flat
@@ -35,7 +35,7 @@
       <template #prepend>
         <v-icon color="#67ADB9" />
       </template>
-      <span style="color: #414141">My Profile</span>
+      <span>My Profile</span>
     </v-btn>
     <v-btn
       flat
@@ -49,7 +49,7 @@
       <template #prepend>
         <v-icon color="#67ADB9" />
       </template>
-      <span style="color: #414141">Manage Practises</span>
+      <span>Manage Practises</span>
     </v-btn>
     <v-btn
       flat
@@ -63,7 +63,7 @@
       <template #prepend>
         <v-icon color="#67ADB9" />
       </template>
-      <span style="color: #414141">Logs</span>
+      <span>Logs</span>
     </v-btn>
   </v-navigation-drawer>
 </template>
