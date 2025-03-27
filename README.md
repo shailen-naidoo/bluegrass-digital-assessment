@@ -20,6 +20,10 @@ I spent some time implementing a bare-bones `service` and `models` pattern to is
 3. Run `npm run api` to serve the backend API required by the frontend
 4. Run `npm run dev` to serve the frontend in a separate terminal
 
+## Running unit tests
+
+1. Run `npm run test`
+
 ## How to test
 
 1. Open the URL `http://localhost:3000` to view the frontend
