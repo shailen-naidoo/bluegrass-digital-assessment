@@ -39,5 +39,24 @@
       "icon": "mdi-lightbulb",
       "value": 2159
     }
+  ],
+  "navigation_drawer": [
+    {
+      "name": "Dashboard",
+      "icon": "mdi-home",
+      "navigate_to": "/dashboard"
+    },
+    {
+      "name": "My Profile",
+      "icon": "mdi-account-box"
+    },
+    {
+      "name": "Manage Practises",
+      "icon": "mdi-medical-bag"
+    },
+    {
+      "name": "Logs",
+      "icon": "mdi-file-document-outline"
+    }
   ]
 }

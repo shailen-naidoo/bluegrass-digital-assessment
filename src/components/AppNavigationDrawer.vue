@@ -8,66 +8,37 @@
       style="height: 65px"
     />
     <v-btn
+      v-for="({ name, icon, navigate_to }, index) in navigationDrawerItems"
+      :key="index"
       flat
-      prepend-icon="mdi-home"
+      :prepend-icon="icon"
       class="text-none justify-start mx-3"
       style="width: 90%"
       size="large"
       :ripple="false"
       rounded="lg"
-      to="/dashboard"
-      active-color="#67ADB914"
+      :to="navigate_to"
+      :active-color="buttonActiveColor"
     >
       <template #prepend>
-        <v-icon color="#67ADB9" />
+        <v-icon :color="iconColor" />
       </template>
-      <span>Dashboard</span>
-    </v-btn>
-    <v-btn
-      flat
-      prepend-icon="mdi-account-box"
-      class="text-none justify-start my-1 mx-3"
-      style="width: 90%"
-      size="large"
-      :ripple="false"
-      rounded="lg"
-    >
-      <template #prepend>
-        <v-icon color="#67ADB9" />
-      </template>
-      <span>My Profile</span>
-    </v-btn>
-    <v-btn
-      flat
-      prepend-icon="mdi-medical-bag"
-      class="text-none justify-start my-1 mx-3"
-      style="width: 90%"
-      size="large"
-      :ripple="false"
-      rounded="lg"
-    >
-      <template #prepend>
-        <v-icon color="#67ADB9" />
-      </template>
-      <span>Manage Practises</span>
-    </v-btn>
-    <v-btn
-      flat
-      prepend-icon="mdi-file-document-outline"
-      class="text-none justify-start my-1 mx-3"
-      style="width: 90%"
-      size="large"
-      :ripple="false"
-      rounded="lg"
-    >
-      <template #prepend>
-        <v-icon color="#67ADB9" />
-      </template>
-      <span>Logs</span>
+      <span>{{ name }}</span>
     </v-btn>
   </v-navigation-drawer>
 </template>
 
 <script lang="ts" setup>
+import type { NavigationDrawerModel } from '@/models/NavigationDrawerModel'
+import { NavigationDrawerService } from '@/services/NavigationDrawerService'
+
+const iconColor = ref('#67ADB9')
+const buttonActiveColor = ref('#67ADB914')
 const drawer = ref(true)
+
+const navigationDrawerItems = ref<NavigationDrawerModel[]>([])
+
+onMounted(async () => {
+  navigationDrawerItems.value = await NavigationDrawerService.getNavigationDrawerItems()
+})
 </script>
