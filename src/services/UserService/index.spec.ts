@@ -1,5 +1,6 @@
 import { describe, expect, vi, test, type Mock } from 'vitest'
 import { UserService } from '.'
+import { UserModel } from '@/models/UserModel'
 
 describe('Test UserService', () => {
   describe('.getUser', () => {
@@ -29,6 +30,7 @@ describe('Test UserService', () => {
         const user = UserService.getUser()
 
         // 3. ASSERT
+        await expect(user).resolves.toBeInstanceOf(UserModel)
         await expect(user).resolves.toEqual({
           fullname: 'John Doe'
         })
